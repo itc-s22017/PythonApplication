@@ -128,7 +128,7 @@ class Tube:
                 
         def aa(imges,word="オリジナル"):
             if comb == word:
-                imges.save(f"/home/s22017/Desktop/image/{a_z}.jpg",quality=95)
+                imges.save(f"/home/s22017/Desktop/try/PythonApplication/src/image/{a_z}.jpg",quality=95)
                 
         Messagebox = tkinter.messagebox.askquestion('確認','本当に保存しますか？', icon='warning')
         if Messagebox == 'yes': 
@@ -203,7 +203,7 @@ class MP3:
         
         ydl_opts = {
     'format': 'bestaudio/best',
-    'outtmpl':  "/home/s22017/Desktop/music/" + '%(title)s'+'.%(ext)s',
+    'outtmpl':  "/home/s22017/Desktop/try/PythonApplication/src/music/" + '%(title)s'+'.%(ext)s',
     'postprocessors': [
         {'key': 'FFmpegExtractAudio',
         'preferredcodec': 'mp3',
